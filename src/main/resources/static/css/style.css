@@ -1,0 +1,19 @@
+.container{
+	margin-top:10px;
+}
+.footer {
+    background: rgb(171, 168, 168);
+    border-radius: 25px;
+    text-align: center;
+    color: #f5fff5;
+}
+.row > div {
+	margin-bottom:30px;
+}
+.row .card.anchor {transition:0.5s all;}
+.row .card.anchor:hover {
+	cursor: pointer;
+	transform:scale(1.05);
+	transition:0.5s all;
+	text-decoration: none;
+}
