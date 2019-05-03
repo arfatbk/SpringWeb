@@ -21,8 +21,8 @@ public class Book {
 	@Column(name="price")
 	private Double price;
 	
-	@Column(name="descreption")
-	private String descreption;
+	@Column(name="description")
+	private String description;
 	
 	@Column(name="profilepic")
 	private String profilepic;
@@ -54,12 +54,12 @@ public class Book {
 		this.price = price;
 	}
 
-	public String getDescreption() {
-		return descreption;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setDescreption(String descreption) {
-		this.descreption = descreption;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public Author getAuthor() {
@@ -83,17 +83,17 @@ public class Book {
 	}
 
 
-	public Book(String title, Double price, String descreption, String profilepic) {
+	public Book(String title, Double price, String description, String profilepic) {
 		super();
 		this.title = title;
 		this.price = price;
-		this.descreption = descreption;
+		this.description = description;
 		this.profilepic = profilepic;
 	}
 
 	@Override
 	public String toString() {
-		return "Book [id=" + id + ", title=" + title + ", price=" + price + ", descreption=" + descreption + ", author="
+		return "Book [id=" + id + ", title=" + title + ", price=" + price + ", description=" + description + ", author="
 				+ author + "]";
 	}
 	
