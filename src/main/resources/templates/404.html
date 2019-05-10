@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Insert title here</title>
-<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
-<link rel="stylesheet" th:href="@{/css/style.css}">
+<head th:insert="fragments/fragments.html :: headerfiles">
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r58/three.min.js"></script>
 </head>
 <body>
 
-	<div class="container">
-		<div class="jumbotron">
-			<h1 class="display-4 text-center">404</h1>
-			<p class="lead text-center">Page not found.</p>
-		</div>
-	</div>
-
+	<p class="mega">
+		4<span class="boom">0</span>4
+	<div class="bola"></div>
+	</p>
+	<p class="mini">That's an error.</p>
+	
+	<div th:insert="fragments/fragments.html :: footer"></div>
+	
+	<script type="text/javascript" th:src="@{/js/three.js}"></script>
+	<script type="text/javascript" th:src="@{/js/404-renderer.js}"></script>
 </body>
 </html>
