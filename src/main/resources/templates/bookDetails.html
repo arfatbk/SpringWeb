@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head th:insert="fragments/fragments.html :: headerfiles"></head>
 <body>
     <head th:insert="fragments/fragments.html :: headerfiles"></head>
@@ -22,7 +22,7 @@
             </div>
             <div class="col-md-8 col-sm-8 col-xs-12">
                 <div class="card">
-                    <div class="card-header" th:text="Author    +${book.author.FirstName + ' '+book.author.MiddleName + book.author.LastName}"}> </div>
+                    <div class="card-header" th:text="Author    +${book.author.FirstName + ' '+book.author.MiddleName + book.author.LastName}"> </div>
                     <div class="card-body" th:text="${book.description}"></div>
                 </div>
             </div>
